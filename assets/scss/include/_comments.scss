@@ -1,0 +1,89 @@
+.comments {
+  margin-top: 6.25rem;
+  padding-right: 1.4375rem;
+  padding-left: 1.4375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  h1 {
+    max-width: 33.1875rem;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6.5rem;
+    color: $color-black-800;
+  }
+
+  &-row {
+    @include flex-box;
+    justify-content: center;
+    gap: 3.125rem;
+    flex-wrap: wrap;
+  }
+}
+
+.comment {
+  max-width: 21.6875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding: 1.875rem;
+  box-sizing: border-box;
+  border: 0.0625rem solid #E5E5E5;
+  border-radius: 0.625rem;
+  transition: .6s all;
+  &:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 3.125rem $color-gray-200;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+    color: $color-black-800;
+  }
+
+  &-author {
+    @include flex-box;
+    gap: 1.875rem;
+
+    img {
+      width: 4.375rem;
+    }
+
+    &-name {
+      h1 {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: $color-black-800;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
+        color: $color-gray-600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 31.25rem) {
+  .comments{
+    h1{
+      font-size: 2.25rem;
+      line-height: 3.875rem;
+    }
+  }
+
+  .comment-author-name{
+    h1{
+      font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: $color-black-800;
+    }
+  }
+}

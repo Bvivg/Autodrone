@@ -1,0 +1,33 @@
+.order-description {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  padding: 22px;
+  box-sizing: border-box;
+
+  h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: $color-black-800;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38px;
+    color: $color-black-800;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  
+  .order-description{
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+}

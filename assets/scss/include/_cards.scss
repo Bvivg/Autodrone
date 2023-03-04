@@ -1,0 +1,121 @@
+.cards {
+  margin-top: 1.875rem;
+  @include flex-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.card {
+  max-width: 39.375rem;
+  position: relative;
+
+  &-content {
+    position: absolute;
+    top: 7.5rem;
+    left: 3.1875rem;
+    max-width: 34.0625rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.card-content__title-first {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-align: center;
+  color: $color-black-800;
+}
+
+.card-content__desc-first {
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 3.125rem;
+  text-align: center;
+  color: $color-black-800-opacity;
+}
+
+.card-content__title-second {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-align: center;
+  color: $color-white-50;
+}
+
+.card-content__desc-second {
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 3.125rem;
+  text-align: center;
+  color: $color-white-50-opacity;
+}
+
+@media screen and (max-width: 34.375rem){
+  
+  .card-content{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    max-width: 34.0625rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  
+  .card-content{
+    position: absolute;
+    top: 3.75rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    max-width: 34.0625rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-content__title-first {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: $color-black-800;
+  }
+
+  .card-content__desc-first {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    text-align: center;
+    color: $color-black-800-opacity;
+  }
+
+  .card-content__title-second {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: $color-white-50;
+  }
+
+  .card-content__desc-second {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    text-align: center;
+    color: $color-white-50-opacity;
+  }
+}

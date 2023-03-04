@@ -1,0 +1,124 @@
+.order {
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  &-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__selected {
+      max-width: 725px;
+      border: 1px solid #E5E5E5;
+      border-radius: 15px;
+      padding: 17px 14px;
+      box-sizing: border-box;
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+    }
+
+    &__select {
+      display: flex;
+      gap: 15px;
+
+      &-img {
+        cursor: pointer;
+        max-width: 170px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #E5E5E5;
+        border-radius: 10px;
+
+        img {
+          border-radius: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+      color: $color-black-800;
+    }
+
+    &__desc {
+      margin-top: 2px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-black-800;
+    }
+
+    &__price {
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 72px;
+      color: $color-black-800;
+    }
+
+    &__features {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 33px;
+      color: $color-black-800;
+    }
+
+    &__characteristics {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+
+    &__btn {
+      margin-top: 27px;
+      width: max-content;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .order {
+    margin-top: 36px;
+    padding: 33px;
+
+    &-images {
+      &__selected {
+        padding: 0;
+        border: none;
+      }
+
+      &__select {
+        &-img {
+          padding: 0;
+          border: none;
+
+          img{
+            width: 100%;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}

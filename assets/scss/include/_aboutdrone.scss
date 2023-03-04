@@ -1,0 +1,84 @@
+.about-drone {
+  margin-top: 1.875rem;
+  background: $color-white-60;
+
+  &-content {
+    padding-top: 5.375rem;
+    padding-bottom: 5.375rem;
+    @include flex-box;
+    gap: 5rem;
+
+    &__img {
+      max-width: 21.375rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 4.5rem;
+      color: $color-black-800;
+    }
+
+    p {
+      max-width: 43.875rem;
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 2.75rem;
+      color: $color-black-800;
+    }
+
+    &__characters {
+      margin-top: 1.875rem;
+      max-width: 49.375rem;
+      @include flex-box;
+      flex-wrap: wrap;
+      gap: 4.375rem;
+      text-align: center;
+    }
+
+    &__character {
+      max-width: 9.0625rem;
+
+      h2 {
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+        color: $color-black-800;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: $color-black-800-opacity-75;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 57.5rem) {
+  .about-drone-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 5.375rem 2.1875rem;
+  }
+
+  .about-drone-info {
+    justify-content: center;
+    text-align: center;
+
+    &__characters {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@mixin flex-box {
+  display: flex;
+  align-items: center;
+}
+
+@mixin grid($size, $gap) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+  gap: $gap;
+}

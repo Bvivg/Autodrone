@@ -1,0 +1,44 @@
+.banner-img {
+  max-width: 28.125rem;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner {
+  background: $color-black-900;
+  min-height: 46.875rem;
+  fill: $color-white-50;
+
+  &-content {
+    margin-top: 3.75rem;
+    @include flex-box;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.8125rem;
+
+    &-title {
+      font-weight: 500;
+      font-size: 2.25rem;
+      line-height: 3.375rem;
+      color: $color-white-50;
+    }
+
+    &-desc {
+      font-weight: 300;
+      font-size: 1.125rem;
+      line-height: 1.6875rem;
+      color: $color-gray-500;
+    }
+
+    &-btn {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 57.5rem) {
+    background: transparent;
+  }
+}
